@@ -1,0 +1,15 @@
+from "Home" right click and select New Folder. Name it .ssh
+download the file named: id_rsa and drag it into your newly created .ssh folder
+
+open terminal and type:
+
+ssh -L 59000:localhost:5901 -C -N -l ubuntu [your assigned ip address]  ex: 10.50.23.55
+
+press enter. This will establish the tunnel to the VM  [DO NOT CLOSE THE TERMINAL!!!]
+
+use Remmina to remotely access your VM. Select VNC at the drop down and type: 
+localhost:59000    (this will connect to the destination port 5901)
+
+VNC password: Jetpack1!  (you can save this password)
+
+to exit the VM session, press CTRL C on the terminal window.
